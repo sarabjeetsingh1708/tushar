@@ -7,10 +7,11 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import song from './components/techy.mp3';
 
 function App() {
   const [isMuted, setIsMuted] = useState(true);
-  const [audio] = useState(new Audio('/assets/ambient-background.mp3'));
+  const [audio] = useState(new Audio(song));
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
