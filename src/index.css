@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  cursor: none;
+}
+
+a:hover ~ .cursor,
+button:hover ~ .cursor {
+  transform: scale(1.5);
+}
